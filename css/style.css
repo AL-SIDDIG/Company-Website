@@ -482,3 +482,18 @@
 .darkblue { 
     background-color: #1e63ca; 
 }
+
+.justify-text {
+    text-align: justify;
+}
+
+.icon-box {
+    width: 60px;
+    height: 60px;
+    background: #f3f6f9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0d6efd;
+}
