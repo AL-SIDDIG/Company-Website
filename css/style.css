@@ -497,3 +497,41 @@
     justify-content: center;
     color: #0d6efd;
 }
+
+.service-feature {
+    background: #fff;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.service-feature:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+
+.service-feature i {
+    color: #ff3b3b;
+}
+
+p {
+    line-height: 1.7;
+}
+
+.text-block {
+    max-width: 900px;
+    margin: auto;
+}
+
+.process-step h1 {
+    font-size: 48px;
+    font-weight: 700;
+    opacity: 0.15;
+}
+
+.process-step h6 {
+    font-weight: 600;
+}
+
+
+
