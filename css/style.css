@@ -533,5 +533,52 @@ p {
     font-weight: 600;
 }
 
+.stat-card h4 {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
 
+.stat-card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
 
+.vmv-card {
+    height: 100%;
+}
+.vmv-card i {
+    font-size: 40px;
+}
+
+.values-list {
+    max-width: 280px;      /* keeps list visually centered */
+    text-align: justify;  /* justify text */
+}
+
+.values-list li {
+    display: flex;
+    align-items: flex-start;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.values-list i {
+    margin-top: 3px; /* aligns check icon with text */
+}
+.process-step {
+    position: relative;
+}
+
+.process-step::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -25px;
+    width: 40px;
+    height: 2px;
+    background: #dee2e6;
+}
+
+.process-step:last-child::after {
+    display: none;
+}
