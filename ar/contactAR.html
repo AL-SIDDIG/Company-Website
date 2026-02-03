@@ -1,146 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 
 <head>
     <meta charset="utf-8">
-    <title>MMC - Management & Marketing Co.</title>
+    <title>MMC Logistics | الخدمات اللوجستية</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="img/logo.jpeg" rel="icon">
+    <link href="../img/logo.jpeg" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
 
-    <!-- Icon Font Stylesheet -->
+    <!-- Bootstrap RTL -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <!-- Owl Carousel CSS -->    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+    <!-- Libraries -->
+    <link href="../lib/animate/animate.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+    <!-- Custom CSS -->
+    <link href="../css/style.css" rel="stylesheet">
+
+    <!-- Arabic Font Fix -->
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+        }
+    </style>
 </head>
 
 <body>
-    <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
-    </div>
-    <!-- Spinner End -->
-
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow border-top border-5 border-primary sticky-top p-0">
-        <a href="index.html" class="navbar-brand bg-primary d-flex align-items-center px-4 px-lg-5">
-            <h2 class="mb-2 text-white">MMC LOGISTICS</h2>
+        
+        <!-- Brand -->
+        <a href="../ar/indexAR.html" class="navbar-brand bg-primary d-flex align-items-center px-4 px-lg-5 rounded-end">
+            <h5 class="mb-0 text-white">الإدارة و التسويق المحدودة</h5>
         </a>
-        <!--
-        <a href="index.html" class="navbar-brand mmc-brand d-flex align-items-center px-4 px-lg-5">
-            <h2 class="mb-0 text-white fw-bold">MMC LOGISTICS</h2>
-        </a>
-        -->
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+
+        <!-- Mobile Toggle -->
+        <button type="button" class="navbar-toggler ms-3" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
+
+        <!-- Menu -->
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
+            <div class="navbar-nav me-auto p-4 p-lg-0">
+
+                <a href="indexAR.html" class="nav-item nav-link">الرئيسية</a>
+                <a href="aboutAR.html" class="nav-item nav-link">من نحن</a>
+
                 <div class="nav-item dropdown">
-                    <a href="services.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+                    <a href="services.html" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">
+                        الخدمات
+                    </a>
                     <div class="dropdown-menu fade-up m-0">
-                        <a href="services.html" class="dropdown-item">Our Services</a>
-                        <a href="service-mailroom.html" class="dropdown-item">Total Mailroom Solutions</a>
-                        <a href="service-outsourcing.html" class="dropdown-item">Administrative Support & Outsourcing</a>
-                        <a href="service-archiving.html" class="dropdown-item">Electronic Archiving</a>
-                        <a href="service-inventory.html" class="dropdown-item">Asset Inventory</a>
-                        <a href="service-parcel.html" class="dropdown-item">Parcel Solutions</a>
-                        <a href="service-warehouse.html" class="dropdown-item">Warehouse Solutions</a>
-                        <a href="service-special.html" class="dropdown-item">Special Services (VIP)</a>
+                        <a href="servicesAR.html" class="dropdown-item">جميع الخدمات</a>
+                        <a href="service-mailroom.html" class="dropdown-item">الحلول الشاملة لغرف البريد</a>
+                        <a href="service-outsourcing.html" class="dropdown-item">الدعم والإسناد الإداري</a>
+                        <a href="service-archiving.html" class="dropdown-item active">الأرشفة الإلكترونية</a>
+                        <a href="service-inventory.html" class="dropdown-item">جرد الأصول</a>
+                        <a href="service-parcel.html" class="dropdown-item">خدمات الطرود</a>
+                        <a href="service-warehouse.html" class="dropdown-item">حلول المستودعات</a>
+                        <a href="service-special.html" class="dropdown-item">الخدمات الخاصة</a>
                     </div>
                 </div>
-                <a href="comingsoon.html" class="nav-item nav-link">Log in</a>
-                <a href="comingsoon.html" class="nav-item nav-link">Tracking</a>
-                <a href="contact.html" class="nav-item nav-link active">Contact</a>
+
+                <a href="comingsoon.html" class="nav-item nav-link">تسجيل الدخول</a>
+                <a href="comingsoon.html" class="nav-item nav-link">التتبع</a>
+                <a href="contact.html" class="nav-item nav-link">تواصل معنا</a>
+
                 <!-- Language Switch -->
-                <a href="ar/contact.html" class="nav-item nav-link fw-bold">
-                    <i class="fa fa-globe me-1"></i> العربية
+                <a href="../index.html" class="nav-item nav-link fw-bold">
+                    <i class="fa fa-globe ms-1"></i> English
                 </a>
+
             </div>
-            <h4 class="m-0 pe-lg-5 d-none d-lg-block">
-                <i class="fa fa-headphones text-primary me-3"></i>+920033525
-            </h4>
+
+            <!-- Phone -->
+            <h5 class="m-4 ps-lg-5 d-none d-lg-block">
+                920033525+<i class="fa fa-headphones text-primary ms-3"></i>
+            </h5>
         </div>
     </nav>
     <!-- Navbar End -->
-
-
+    
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-5" style="margin-bottom: 6rem;">
         <div class="container py-5">
-            <h1 class="display-3 text-white mb-3 animated slideInDown">Contact Us</h1>
+            <h1 class="display-3 text-white mb-3 animated slideInDown">تواصل معنا</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                    <li class="breadcrumb-item text-white active" aria-current="page">Contact</li>
+                    <li class="breadcrumb-item"><a class="text-white" href="indexAR.html">الرئيسية</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="servicesAR.html">جميع الخدمات</a></li>
+                    <li class="breadcrumb-item text-white active" aria-current="page">تواصل معنا</li>
                 </ol>
             </nav>
         </div>
     </div>
     <!-- Page Header End -->
-
-
+	
     <!-- Contact Start -->
     <section class="container-xxl py-5">
         <div class="container-fluid overflow-hidden py-5 px-lg-0">
             <div class="container contact-page py-5 px-lg-0">
                 <div class="row g-5 mx-lg-0">
                     <div class="col-md-6 contact-form wow fadeIn" data-wow-delay="0.1s">
-                        <h6 class="text-secondary text-uppercase">Get In Touch</h6>
-                        <h1 class="mb-4">Contact For Any Query</h1>
-                        <p class="mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
+                        <h6 class="text-secondary text-uppercase">كن على تواصل معنا</h6>
+                        <h1 class="mb-4">للاستفسار، يرجى الاتصال بنا</h1>
+                        <p class="mb-4">فى حال كنت في حاجة لطلب أي خدمة من خدماتنا المتنوعة، أو وجود اي استفسار، أو في حال وجود ملاحظات في الخدمة المقدمة من قبلنا لا تتردد في التواصل معنا مباشرة </a>.</p>
                         <div class="bg-light p-4">
                             <form>
                                 <div class="row g-3">
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                            <label for="name">Your Name</label>
+                                            <input type="text" class="form-control" id="name" placeholder="الإسم بالكامل">
+                                            <label for="name">الإسم بالكامل</label>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                            <label for="email">Your Email</label>
+                                            <input type="email" class="form-control" id="email" placeholder="البريد الإلكتروني">
+                                            <label for="email">البريد الإلكتروني</label>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                            <label for="subject">Subject</label>
+                                            <input type="text" class="form-control" id="subject" placeholder="الموضوع">
+                                            <label for="subject">الموضوع</label>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating">
                                             <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
-                                            <label for="message">Message</label>
+                                            <label for="message">نص الرسالة</label>
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                                        <button class="btn btn-primary w-100 py-3" type="submit">ارسال</button>
                                     </div>
                                 </div>
                             </form>
@@ -163,79 +174,114 @@
         </div>
     </section>
     <!-- Contact End -->
-
-
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer pt-5 wow fadeIn" data-wow-delay="0.1s" style="margin-top: 6rem;">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-4 col-md-6">
-                    <h4 class="text-light mb-4">Address</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>8969 Prince Saad bin Faisal Rd, Al Namudhajiyah Dist., Riyadh, KSA</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+920033525</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>marketing@mmcco.com</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <h4 class="text-light mb-4">Services</h4>
-                    <a class="btn btn-link" href="service-mailroom.html">Total Mailroom Solutions</a>
-                    <a class="btn btn-link" href="service-outsourcing.html">Administrative Support & Outsourcing</a>
-                    <a class="btn btn-link" href="service-archiving.html">Electronic Archiving</a>
-                    <a class="btn btn-link" href="service-inventory.html">Asset Inventory</a>
-                    <a class="btn btn-link" href="service-parcel.html">Parcel Solutions</a>
-                    <a class="btn btn-link" href="service-warehouse.html">Warehouse Solutions</a>
-                    <a class="btn btn-link" href="service-special.html">Special Services (VIP)</a>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <h4 class="text-light mb-4">Quick Links</h4>
-                    <a class="btn btn-link" href="about.html">About Us</a>
-                    <a class="btn btn-link" href="contact.html">Contact Us</a>
-                    <a class="btn btn-link" href="services.html">Our Services</a>
-                    <a class="btn btn-link" href="comingsoon.html">Terms & Condition</a>
-                    <a class="btn btn-link" href="comingsoon.html">Log In</a>
-                    <a class="btn btn-link" href="comingsoon.html">Tracking</a>
-                    <a class="btn btn-link" href="comingsoon.html">Support</a>
-                </div>
-            </div>
-        </div>
+    
+    <!-- Footer Start-->
+    <footer class="site-footer" dir="rtl">
         <div class="container">
-            <div class="copyright">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
-                        </br>Distributed By <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a>
+            <div class="row gy-4">
+
+                <!-- العمود الأول: عن الشركة -->
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="footer-title">MMC للخدمات اللوجستية</h5>
+                    <p class="footer-text">
+                        نقدم حلولًا متكاملة في الخدمات اللوجستية، غرف البريد،
+                        الأرشفة الإلكترونية، والدعم الإداري داخل المملكة العربية السعودية.
+                    </p>
+
+                    <div class="footer-social">
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
+
+                <!-- العمود الثاني: الخدمات -->
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="footer-title">الخدمات</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">غرف البريد</a></li>
+                        <li><a href="#">الدعم الإداري</a></li>
+                        <li><a href="#">الأرشفة الإلكترونية</a></li>
+                        <li><a href="#">غرف البريد</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5> </h5>
+                    <ul class="footer-links">
+                        <li><a href="#">غرف البريد</a></li>
+                        <li><a href="#">الدعم الإداري</a></li>
+                        <li><a href="#">الأرشفة الإلكترونية</a></li>
+                    </ul>
+                </div>
+
+                <!-- العمود الثالث: تواصل معنا -->
+                <div class="col-lg-4 col-md-12">
+                    <h5 class="footer-title">تواصل معنا</h5>
+
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            الرياض، المملكة العربية السعودية
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:920033525">920033525</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:info@mmc.com">info@mmc.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- خط -->
+            <hr class="footer-divider">
+
+            <!-- الحقوق -->
+            <div class="footer-bottom text-center">
+                © جميع الحقوق محفوظة – شركة الإدارة والتسويق المحدودة
             </div>
         </div>
-    </div>
-    <!-- Footer End -->
-
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-0 back-to-top"><i class="bi bi-arrow-up"></i></a>
-
+    </footer>
 
     <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <!--OwlCarousel-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+    <!-- Libraries -->
+    <script src="../lib/wow/wow.min.js"></script>
+    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <script>
+        new WOW().init();
+    </script>
+    <script src="../js/main.js"></script>
+
+	<script>
+        $(document).ready(function () {
+            $('.testimonial-carousel').owlCarousel({
+                rtl: true,
+                loop: true,
+                margin: 24,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                smartSpeed: 1000,
+                dots: true,
+                nav: false,
+                responsive: {
+                    0: { items: 1 },
+                    768: { items: 2 },
+                    992: { items: 4 }
+                }
+            });
+        });
+    </script>
+
 </body>
-
 </html>
