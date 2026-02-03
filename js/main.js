@@ -89,7 +89,6 @@
         ]
     });
 
-
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
         autoplay: false,
@@ -109,6 +108,34 @@
             }
         }
     });
+
+    $(".header-carousel").owlCarousel({
+        autoplay: true,
+        smartSpeed: 1500,
+        items: 1,
+        dots: true,
+        loop: true,
+        nav: true,
+        navText: [
+            '<i class="fa fa-angle-left"></i>',
+            '<i class="fa fa-angle-right"></i>'
+        ]
+    });
+
+    $(document).ready(function () {
+        $('.header-carousel').owlCarousel({
+            autoplay: true,
+            smartSpeed: 1200,
+            autoplayTimeout: 6000,
+            loop: true,
+            nav: false,
+            dots: true,
+            items: 1,
+            rtl: true
+        });                                                                         
+    });
+
+    
     
 })(jQuery);
 

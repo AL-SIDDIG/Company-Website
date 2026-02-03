@@ -582,3 +582,370 @@ p {
 .process-step:last-child::after {
     display: none;
 }
+
+/* MMC Brand Colors */
+.mmc-brand {
+    background-color: #1F2A44 !important; /* MMC Navy */
+}
+
+.navbar {
+    border-top: 5px solid #1F2A44;
+}
+
+.navbar .nav-link.active {
+    color: #1F2A44 !important;
+}
+
+.navbar .nav-link:hover {
+    color: #2F3E63;
+}
+
+.text-mmc {
+    color: #1F2A44 !important;
+}
+
+iframe {
+    border-radius: 12px;
+}
+
+iframe {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.header-carousel .owl-carousel-item {
+    position: relative;
+    min-height: 500px;
+}
+
+.header-carousel .owl-carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* FORCE OWL CAROUSEL VISIBILITY */
+.header-carousel,
+.header-carousel .owl-stage-outer,
+.header-carousel .owl-stage,
+.header-carousel .owl-item {
+    height: 100%;
+}
+
+.header-carousel h1,
+.header-carousel h5,
+.header-carousel p {
+    text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+}
+
+.owl-carousel-item {
+    height: 85vh;
+    position: relative;
+}
+
+.owl-carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-carousel .btn {
+    transition: all 0.3s ease;
+}
+
+.header-carousel .btn:hover {
+    transform: translateY(-2px);
+}
+
+.service-card img {
+    height: 220px;
+    object-fit: cover;
+}
+
+.service-btn {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+
+    display: flex;
+    align-items: center;
+
+    background-color: #0d6efd; /* same as تواصل معنا */
+    color: #fff;
+
+    border-radius: 50px;
+    padding: 10px 18px 10px 22px; /* text shifted left from edge */
+
+    text-decoration: none;
+    overflow: hidden;
+
+    transition: 0.3s ease;
+}
+
+.service-btn .btn-text {
+    white-space: nowrap;
+    margin-left: 10px; /* spacing from arrow */
+    opacity: 0;
+    transform: translateX(10px);
+    transition: 0.3s ease;
+}
+
+.service-btn .btn-icon {
+    background: #fff;
+    color: #0d6efd;
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    font-size: 14px;
+}
+
+.service-btn:hover {
+    background-color: #e62e2e;
+    color: #fff;
+}
+
+.read-more-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #0d6efd;
+    color: #fff;
+    height: 45px;
+    border-radius: 30px;
+    overflow: hidden;
+    text-decoration: none;
+    transition: 0.3s ease;
+    width: 45px; /* collapsed state */
+}
+
+.read-more-btn .icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.read-more-btn .text {
+    white-space: nowrap;
+    padding-inline-start: 20px; /* space from right edge (RTL safe) */
+    padding-inline-end: 12px;
+    opacity: 0;
+    transition: 0.3s ease;
+    font-size: 14px;
+}
+
+/* Hover effect */
+.read-more-btn:hover {
+    width: 130px; /* expanded */
+}
+
+.read-more-btn:hover .text {
+    opacity: 1;
+}
+
+.service-card {
+    transition: 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.service-card img {
+    transition: 0.4s ease;
+}
+
+.service-card:hover img {
+    transform: scale(1.05);
+}
+
+.service-card {
+    cursor: pointer;
+}
+
+.btn-social {
+    width: 38px;
+    height: 38px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.site-footer {
+    background-color: #1f2428;
+    color: #ffffff;
+    padding: 60px 0 30px;
+    direction: rtl;
+    text-align: right;
+    font-size: 15px;
+}
+
+.site-footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    color: #0d6efd;
+}
+
+/* العناوين */
+.footer-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* النص */
+.footer-text {
+    line-height: 1.8;
+    color: #cfd4d8;
+}
+
+/* الروابط */
+.footer-links,
+.footer-contact {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li,
+.footer-contact li {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* الأيقونات */
+.footer-contact i {
+    color: #0d6efd;
+    min-width: 20px;
+}
+
+/* السوشيال */
+.footer-social {
+    margin-top: 20px;
+    display: flex;
+    gap: 12px;
+}
+
+.footer-social a {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ffffff40;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.footer-social a:hover {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+/* الخط */
+.footer-divider {
+    border-color: #ffffff20;
+    margin: 40px 0 20px;
+}
+
+/* الأسفل */
+.footer-bottom {
+    font-size: 14px;
+    color: #cfd4d8;
+}
+
+
+.about-section {
+    padding: 10px 0;
+}
+
+.about-title {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.about-text {
+    color: #555;
+    line-height: 1.9;
+    font-size: 20px;
+}
+
+.about-feature {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.about-feature i {
+    font-size: 30px;
+    color: #0d6efd;
+}
+
+.about-btn {
+    background: #0d6efd;
+    color: #fff;
+    padding: 14px 40px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.tech-section {
+    background: #faf6f3;
+    padding: 20px 0;
+}
+
+.section-tag {
+    color: #1bb3e8;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.section-text {
+    color: #555;
+    line-height: 1.9;
+    margin-bottom: 15px;
+}
+
+.tech-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    height: 100%;
+}
+
+.tech-card i {
+    font-size: 36px;
+    color: #0d6efd;;
+    margin-bottom: 15px;
+}
+
+.tech-card h5 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.section-light { background: #ffffff; }
+.section-soft { background: #f8f9fb; }
