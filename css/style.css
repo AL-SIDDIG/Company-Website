@@ -118,7 +118,7 @@
 
 .navbar-light.sticky-top {
     top: -100px;
-    transition: .5s;
+    transition: .2s;
 }
 
 @media (min-width: 992px) {
@@ -949,3 +949,32 @@ iframe {
 
 .section-light { background: #ffffff; }
 .section-soft { background: #f8f9fb; }
+
+.testimonial-item {
+    direction: rtl;
+    text-align: right;
+}
+
+.testimonial-item p {
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.owl-carousel {
+    display: block !important;
+}
+
+.testimonial-item {
+    direction: rtl;
+    text-align: right;
+}
+
+.service-card img {
+    height: 220px;
+    object-fit: cover;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    transition: 0.3s ease;
+}
