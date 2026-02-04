@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>Management & Marketing Co.</title>
+    <title>شركة الإدارة والتسويق المحدودة</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="" name="keywords">
+    <meta content="" name="description">
 
     <!-- Favicon -->
     <link href="img/logo.jpeg" rel="icon">
@@ -14,12 +16,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap LTR -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-
-    <!-- Font Awesome -->
+    <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Owl Carousel CSS -->    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
@@ -28,9 +27,12 @@
 
     <!-- Libraries -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
+	<link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+	<!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
@@ -43,14 +45,14 @@
     </style>
 </head>
 
-<body class="home-en">
+<body>
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow border-top border-5 border-primary sticky-top p-0">
         
         <!-- Brand -->
-        <a href="ar/indexAR.html" class="navbar-brand bg-primary d-flex align-items-center px-4 px-lg-5 rounded-end me-lg-5">
-            <h5 class="mb-0 text-white">Management & Marketing Co.</h5>
+        <a href="ar/indexAR.html" class="navbar-brand bg-primary d-flex align-items-center px-4 px-lg-5 rounded-end">
+            <h5 class="mb-0 text-white">الإدارة و التسويق المحدودة</h5>
         </a>
 
         <!-- Mobile Toggle -->
@@ -62,27 +64,28 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav me-auto p-4 p-lg-0">
 
-                <a href="indexEN.html" class="nav-item nav-link active">Home</a>
-                <a href="aboutEN.html" class="nav-item nav-link">About Us</a>
+                <a href="indexAR.html" class="nav-item nav-link active">الرئيسية</a>
+                <a href="aboutAR.html" class="nav-item nav-link">من نحن</a>
 
                 <div class="nav-item dropdown">
-                    <a href="servicesEN.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                        Services
+                    <a href="servicesAR.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                        الخدمات
                     </a>
                     <div class="dropdown-menu fade-up m-0">
-                        <a href="servicesEN.html" class="dropdown-item">All Services</a>
-                        <a href="service-mailroomEN.html" class="dropdown-item">Total Mailroom Solutions</a>
-                        <a href="service-outsourcingEN.html" class="dropdown-item">Administrative outsourcing</a>
-                        <a href="service-archivingEN.html" class="dropdown-item">Electronic Archiving</a>
-                        <a href="service-inventoryEN.html" class="dropdown-item">assets inventory</a>
-                        <a href="service-parcelEN.html" class="dropdown-item">Parcal Solutions</a>
-                        <a href="service-warehouseEN.html" class="dropdown-item">Warehouse Solutions</a>
-                        <a href="service-specialEN.html" class="dropdown-item">Special Services</a>
+                        <a href="servicesAR.html" class="dropdown-item">جميع الخدمات</a>
+                        <a href="service-mailroomAR.html" class="dropdown-item">الحلول الشاملة لغرف البريد</a>
+                        <a href="service-outsourcingAR.html" class="dropdown-item">الدعم والإسناد الإداري</a>
+                        <a href="service-archivingAR.html" class="dropdown-item">الأرشفة الإلكترونية</a>
+                        <a href="service-inventoryAR.html" class="dropdown-item">جرد الأصول</a>
+                        <a href="service-parcelAR.html" class="dropdown-item">خدمات الطرود</a>
+                        <a href="service-warehouseAR.html" class="dropdown-item">حلول المستودعات</a>
+                        <a href="service-specialAR.html" class="dropdown-item">الخدمات الخاصة</a>
                     </div>
                 </div>
-                <a href="comingsoon.html" class="nav-item nav-link">Log In </a>
-                <a href="comingsoon.html" class="nav-item nav-link">Tracking</a>
-                <a href="contactEN.html" class="nav-item nav-link ">Contact Us</a>
+
+                <a href="comingsoon.html" class="nav-item nav-link">تسجيل الدخول</a>
+                <a href="comingsoon.html" class="nav-item nav-link">التتبع</a>
+                <a href="contactAR.html" class="nav-item nav-link ">تواصل معنا</a>
 
                 <!-- Language Switch -->
                 <a href="index.html" class="nav-item nav-link fw-bold">
@@ -99,207 +102,263 @@
     </nav>
     <!-- Navbar End -->
     
-    <!-- Page Header Start -->
-    <div class="container-fluid page-header py-5" style="margin-bottom: 6rem;">
-        <div class="container py-5">
-            <h1 class="display-3 text-white mb-3 animated slideInDown">ABOUT MMC</h1>
-            <nav aria-label="breadcrumb animated slideInDown">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a class="text-white" href="indexAR.html">Home</a></li>
-                    <li class="breadcrumb-item text-white active" aria-current="page">About US</li>
-                </ol>
-            </nav>
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0">
+        <div class="owl-carousel header-carousel position-relative">
+
+            <!-- Slide 1 -->
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/logistics-solutions.png" alt="حلول لوجستية">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                    style="background: rgba(6, 3, 21, 0.6);">
+                    <div class="container">
+                        <div class="row justify-content-end">
+                            <div class="col-12 col-lg-8 text-end">
+                                <h5 class="text-white text-uppercase mb-3 wow slideInDown">
+                                    حلول النقل والخدمات اللوجستية
+                                </h5>
+                                <h1 class="display-4 text-white mb-4 wow slideInDown">
+                                    شريكك الموثوق في <span class="text-primary">الخدمات اللوجستية</span> داخل المملكة
+                                </h1>
+                                <p class="fs-5 text-white mb-4">
+                                    حلول متكاملة لدعم أعمالك بكفاءة واحترافية
+                                </p>
+                                <div class="d-flex justify-content-end gap-3 mt-4">
+                                    <a href="contactAR.html"
+                                    class="btn btn-primary btn-lg px-5 rounded-pill shadow">
+                                        تواصل معنا
+                                    </a>
+
+                                    <a href="contactAR.html#quote"
+                                    class="btn btn-outline-light btn-lg px-5 rounded-pill">
+                                        اطلب عرض سعر
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-2.jpg" alt="نقل وتوزيع">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                    style="background: rgba(6, 3, 21, 0.6);">
+                    <div class="container">
+                        <div class="row justify-content-end">
+                            <div class="col-12 col-lg-8 text-end">
+                                <h5 class="text-white text-uppercase mb-3 wow slideInDown">
+                                    حلول نقل وتوزيع موثوقة
+                                </h5>
+                                <h1 class="display-4 text-white mb-4 wow slideInDown">
+                                    شبكة تغطي أكثر من <span class="text-primary">187 مدينة</span>
+                                </h1>
+                                <p class="fs-5 text-white mb-4">
+                                    تسليم سريع وآمن يدعم نمو أعمالك
+                                </p>
+                                <div class="d-flex justify-content-end gap-3 mt-4">
+                                    <a href="contactAR.html"
+                                    class="btn btn-primary btn-lg px-5 rounded-pill shadow">
+                                        تواصل معنا
+                                    </a>
+
+                                    <a href="contactAR.html#quote"
+                                    class="btn btn-outline-light btn-lg px-5 rounded-pill">
+                                        اطلب عرض سعر
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <!-- Page Header End -->
-    
-    <!-- About Start -->
-    <section class="container-xxl py-5">
-        <div class="container py-5">
-            <div class="row align-items-center">
+    <!-- Carousel End -->
 
-                <!-- LEFT: LOGO -->
-                <div class="col-lg-5 text-center mb-4 mb-lg-0 wow fadeInLeft" data-wow-delay="0.1s">
-                    <img src="img/logo.jpeg" 
-                        alt="MMC Logo" 
-                        class="img-fluid stat-card"
-                        style="max-width:500px;">
-                </div>
-
-                <!-- RIGHT: TEXT -->
-                <div class="col-lg-7 wow fadeInRight" data-wow-delay="0.1s">
-                    <h2 class="about-title ">
-                        Managment & Marketing Co. Ltd,
-                    </h2>
-                    <p>
-						Management and Marketing Company Limited <strong>(MMC)</strong> was established in (1992) to bridge the gap in specialized logistics services needed by various 
-						institutions, by attracting talents with extensive experience in the various services provided by the company.
-					</p>
-
-                    <p class="mb-5">
-						With decades of operational experience, MMC supports government agencies, financial institutions, and corporate clients with secure, 
-						standards-compliant, technology-based solutions designed to enhance operational efficiency and excellence.
-					</p>
-
-                    <!-- Bullet points -->
-                    <ul class="list-unstyled mt-3">
-                        <li class="wow fadeInUp mb-2" data-wow-delay="0.3s"><i class="fa fa-check text-primary me-2"></i>Established in 1992</li>
-                        <li class="wow fadeInUp mb-2" data-wow-delay="0.5s"><i class="fa fa-check text-primary me-2"></i>nationwide operations</li>
-                        <li class="wow fadeInUp mb-2" data-wow-delay="0.7s"><i class="fa fa-check text-primary me-2"></i>Government, banking and private sector clients</li>
-                        <li class="wow fadeInUp mb-2" data-wow-delay="0.9s"><i class="fa fa-check text-primary me-2"></i>Safe and compliant services</li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- About End -->
-    
-    <!-- Corporate Affiliation & Stats Start -->
-    <section class="container-fluid py-5 bg-light">
+    <!-- Statistics Section Start -->
+    <div class="container-xxl bg-light py-5 mt-5" dir="rtl">
         <div class="container">
-            <div class="row g-4">
+            <div class="row g-4 text-center">
 
-                <!-- CARD 1 -->
-                <div class="col-lg-3 col-md-6 stat-card">
-                    <div class="card h-100 border-0 shadow text-center p-4">
-                        <i class="fa fa-building fa-3x text-primary mb-3"></i>
-                        <h4 class="fw-bold mb-1">1992</h3>
-                        <p class="mb-0 text-muted">Established</p>
+                <!-- Experience -->
+                <div class="col-6 col-lg-3 wow fadeInRight" data-wow-delay="0.7s">
+                    <div class="bg-white shadow rounded-4 p-4 h-100 service-card">
+                        <i class="fa fa-calendar-alt fa-2x text-primary mb-3"></i>
+                        <h2 class="fw-bold mb-1">15+</h2>
+                        <p class="mb-0">سنوات من الخبرة</p>
                     </div>
                 </div>
 
-                <!-- CARD 2 -->
-                <div class="col-lg-3 col-md-6 stat-card">
-                    <div class="card h-100 border-0 shadow text-center p-4">
-                        <i class="fa fa-handshake fa-3x text-success mb-3"></i>
-                        <h3 class="fw-bold mb-1">Government</h3>
-                        <p class="mb-0 text-muted">Affiliated Clients</p>
+                <!-- Cities -->
+                <div class="col-6 col-lg-3 wow fadeInRight" data-wow-delay="0.5s">
+                    <div class="bg-white shadow rounded-4 p-4 h-100 service-card">
+                        <i class="fa fa-map-marker-alt fa-2x text-primary mb-3"></i>
+                        <h2 class="fw-bold mb-1">187+</h2>
+                        <p class="mb-0">مدن مغطاة</p>
                     </div>
                 </div>
 
-                <!-- CARD 3 -->
-                <div class="col-lg-3 col-md-6 stat-card">
-                    <div class="card h-100 border-0 shadow text-center p-4">
-                        <i class="fa fa-university fa-3x text-danger mb-3"></i>
-                        <h3 class="fw-bold mb-1">Banks</h3>
-                        <p class="mb-0 text-muted">Financial Institutions</p>
+                <!-- Clients -->
+                <div class="col-6 col-lg-3 wow fadeInRight" data-wow-delay="0.3s">
+                    <div class="bg-white shadow rounded-4 p-4 h-100 service-card">
+                        <i class="fa fa-users fa-2x text-primary mb-3"></i>
+                        <h2 class="fw-bold mb-1">500+</h2>
+                        <p class="mb-0">عملاء مؤسسيون</p>
                     </div>
                 </div>
 
-                <!-- CARD 4 -->
-                <div class="col-lg-3 col-md-6 stat-card">
-                    <div class="card h-100 border-0 shadow text-center p-4">
-                        <i class="fa fa-map-marked-alt fa-3x text-warning mb-3"></i>
-                        <h3 class="fw-bold mb-1">Nationwide</h3>
-                        <p class="mb-0 text-muted">Kingdom Coverage</p>
+                <!-- Shipments -->
+                <div class="col-6 col-lg-3 wow fadeInRight" data-wow-delay="0.1s">
+                    <div class="bg-white shadow rounded-4 p-4 h-100 service-card">
+                        <i class="fa fa-box fa-2x text-primary mb-3"></i>
+                        <h2 class="fw-bold mb-1">2M+</h2>
+                        <p class="mb-0">شحنة تم تنفيذها</p>
                     </div>
                 </div>
-
             </div>
         </div>
-    </section><br>
-    <!-- Corporate Affiliation & Stats End -->
+    </div>
+    <!-- Statistics Section End -->
 
-    <!-- Vision Mission Values Start -->
-    <section class="container py-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="text-center mb-5">
-            <h6 class="text-secondary text-uppercase">Who we Are ?</h6>
-            <h1 class="mb-3">Vision, Message and Values</h1>
-            <p class="text-muted w-75 mx-auto">
-                Guided by experience, driven by excellence, and committed to delivering reliable solutions
-            </p>
-        </div>
-        <div class="row g-4">
-            <!-- Vision -->
-            <div class="col-lg-4 stat-card">
-                <div class="h-100 border rounded p-4 text-center shadow-sm">
-                    <i class="fa fa-eye fa-3x text-primary mb-3"></i>
-                    <h4 class="mb-3">Vision</h4>
-                    <p class="text-muted ">
-						Highly efficient logistics services, in the shortest time and at the lowest cost.
-					</p>
+    <!-- About Us Start-->
+    <section class="container-xxl section-soft mt-5" dir="rtl">
+        <div class="container-fluid  py-5">
+            <div class="row align-items-center">
+                <!-- Logo -->
+                <div class="col-lg-5 text-center wow slideInRight">
+                    <img src="img/logo1.png" class="img-fluid" alt="MMC">
                 </div>
-            </div>
-            <!-- Mission -->
-            <div class="col-lg-4 stat-card">
-                <div class="h-100 border rounded p-4 text-center shadow-sm">
-                    <i class="fa fa-bullseye fa-3x text-success mb-3"></i>
-                    <h4 class="mb-3">Message</h4>
-                    <p class="text-muted justify-text">
-						Contributing with partners and employees in the logistics sector to present the Kingdom of Saudi Arabia as a global logistics hub, to achieve Vision (2030).                    </p>
+                <!-- Content -->
+                <div class="col-lg-7 wow slideInDown">
+                    <h2 class="about-title ">
+                        شركة الإدارة والتسويق المحدودة
+                    </h2>
+                    <p class="about-text">
+                        تأسست شركة الإدارة والتسويق (MMC) عام 1992 لسد الفجوة في
+                        الخدمات اللوجستية المتخصصة التي تحتاجها المؤسسات المختلفة.
+                    </p>
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <div class="about-feature">
+                                <i class="fa fa-globe"></i>
+                                <div>
+                                    <h6 class="about-text">نطاق التغطية</h6>
+                                    <p>أكثر من 187 مدينة ومحافظة داخل المملكة.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="about-feature">
+                                <i class="fa fa-truck"></i>
+                                <div>
+                                    <h6 class="about-text">التسليم في الوقت المحدد</h6>
+                                    <p>نضمن وصول الشحنات في الوقت المحدد.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="about.html" class="btn about-btn mt-4">
+                        استكشف المزيد
+                    </a>
                 </div>
-            </div>
-            <!-- Values -->
-            <div class="col-lg-4 stat-card">
-                <div class="h-100 border rounded p-4 text-center shadow-sm">
-                    <i class="fa fa-gem fa-3x text-danger mb-3"></i>
-                    <h4 class="mb-3">قيم الشركة</h4>
-                    <ul class="list-unstyled mt-3 values-list mx-auto">
-                        <li class="wow fadeInUp" data-wow-delay="0.1s">
-                            <i class="fa fa-check-circle text-primary me-2"></i>
-                            النزاهة والسرية
-                        </li>
-                        <li class="wow fadeInUp" data-wow-delay="0.3s">
-                            <i class="fa fa-check-circle text-primary me-2"></i>
-                            التميز التشغيلي
-                        </li>
-                        <li class="wow fadeInUp" data-wow-delay="0.5s">
-                            <i class="fa fa-check-circle text-primary me-2"></i>
-                            الالتزام تجاه العملاء  
-                        </li>
-                        <li class="wow fadeInUp" data-wow-delay="0.7s">
-                            <i class="fa fa-check-circle text-primary me-2"></i>
-                            الابتكار والموثوقية
-                        </li>
-                    </ul>
-                </div>
+
             </div>
         </div>
     </section>
-    <!-- Vision Mission Values End -->
+    <!-- About Us End-->
     
+    <!-- Services Capabilities Start -->
+    <div class="container py-5" dir="rtl">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">قدراتنا التشغيلية</h2>
+            <p class="text-muted">حلول لوجستية متكاملة مصممة لدعم أعمالك</p>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="text-center bg-light rounded-4 p-4 h-100 service-card">
+                    <i class="fa fa-envelope fa-2x text-primary mb-3"></i>
+                    <h6 class="fw-bold">إدارة غرف البريد</h6>
+                    <p class="small mb-0">تشغيل كامل لغرف البريد داخل الجهات الحكومية والشركات</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="text-center bg-light rounded-4 p-4 h-100 service-card">
+                    <i class="fa fa-truck fa-2x text-primary mb-3"></i>
+                    <h6 class="fw-bold">خدمات النقل والتوزيع</h6>
+                    <p class="small mb-0">شبكة توزيع تغطي جميع مناطق المملكة</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="text-center bg-light rounded-4 p-4 h-100 service-card">
+                    <i class="fa fa-warehouse fa-2x text-primary mb-3"></i>
+                    <h6 class="fw-bold">حلول المستودعات</h6>
+                    <p class="small mb-0">إدارة وتخزين ذكي للأصول والطرود</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 wow fadeInUp" data-wow-delay="0.7s">
+                <div class="text-center bg-light rounded-4 p-4 h-100 service-card">
+                    <i class="fa fa-database fa-2x text-primary mb-3"></i>
+                    <h6 class="fw-bold">الأرشفة الإلكترونية</h6>
+                    <p class="small mb-0">تحويل وأرشفة المستندات وفق أعلى المعايير</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Services Capabilities End -->
+
+
     <!-- Why Choose Us Start -->
-    <div class="container py-5">
+    <div class="container py-5" dir="rtl">
         <div class="row g-5 align-items-center">
 
             <!-- Text Content -->
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                <h2 class="fw-bold mb-4">Why Choose <span class="text-primary">MMC</span> ?</h2>
+                <h2 class="fw-bold mb-4">لماذا تختار <span class="text-primary">MMC</span>؟</h2>
 
                 <p class="text-muted mb-4">
-                    At MMC, we act as a strategic partner to our clients, providing flexible solutions that support business 
-                    continuity and enhance the efficiency of logistics operations according to the highest professional standards.
+                    في MMC نعمل كشريك استراتيجي لعملائنا، ونقدم حلولًا مرنة
+                    تدعم استمرارية الأعمال وترفع كفاءة العمليات اللوجستية
+                    وفق أعلى المعايير المهنية.
                 </p>
 
                 <div class="d-flex align-items-start mb-3">
-                    <i class="fa fa-check-circle text-primary fa-lg me-3 mt-2"></i>
-                    <span>Extensive experience in the Saudi market</span>
+                    <i class="fa fa-check-circle text-primary fa-lg me-3 mt-1"></i>
+                    <span>خبرة طويلة في السوق السعودي</span>
                 </div>
 
                 <div class="d-flex align-items-start mb-3">
-                    <i class="fa fa-check-circle text-primary fa-lg me-3 mt-2"></i>
-                    <span>Extensive operational coverage Nationwide</span>
+                    <i class="fa fa-check-circle text-primary fa-lg me-3 mt-1"></i>
+                    <span>تغطية تشغيلية واسعة داخل جميع مناطق المملكة</span>
                 </div>
 
                 <div class="d-flex align-items-start mb-3">
-                    <i class="fa fa-check-circle text-primary fa-lg me-3 mt-2"></i>
-                    <span>Accurate tracking and operational reporting systems</span>
+                    <i class="fa fa-check-circle text-primary fa-lg me-3 mt-1"></i>
+                    <span>أنظمة تتبع وتقارير تشغيلية دقيقة</span>
                 </div>
 
                 <div class="d-flex align-items-start">
-                    <i class="fa fa-check-circle text-primary fa-lg me-3 mt-2"></i>
-                    <span>Commitment to quality and governance standards</span>
+                    <i class="fa fa-check-circle text-primary fa-lg me-3 mt-1"></i>
+                    <span>الالتزام بمعايير الجودة والحوكمة</span>
                 </div>
             </div>
 
             <!-- Visual Box -->
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="bg-light rounded-4 p-5 shadow-sm service-card">
-                    <h5 class="fw-bold mb-3">Your trusted logistics partner</h5>
+                    <h5 class="fw-bold mb-3">شريكك اللوجستي الموثوق</h5>
                     <p class="mb-0">
-                        We possess the infrastructure and operational expertise that enable us to manage logistics operations with high efficiency, 
-                        while ensuring speed, accuracy, and full compliance with customer requirements.
+                        نمتلك البنية التحتية والخبرة التشغيلية التي تمكّننا
+                        من إدارة العمليات اللوجستية بكفاءة عالية، مع ضمان
+                        السرعة، الدقة، والالتزام الكامل بمتطلبات العملاء.
                     </p>
                 </div>
             </div>
@@ -318,26 +377,28 @@
         </div>
     </div>
     <!-- Why Choose Us End -->
-
-    <!-- Technical Solutions Start-->
-    <section class="tech-section section-soft">
+    
+    <!-- الحلول التقنية-->
+    <section class="tech-section section-soft" dir="rtl">
         <div class="container">
             <div class="row align-items-center">
 
                 <!-- Text -->
                 <div class="col-lg-6">
-                    <span class="section-tag">Technical Solutions</span>
+                    <span class="section-tag">الحلول التقنية</span>
                     <h2 class="section-title">
-                        Technology that enhances operational excellence
+                        التكنولوجيا التي تعزز التميز التشغيلي
                     </h2>
 
                     <p class="section-text">
-                    At <strong>MMC</strong> believes that technology is the backbone of business development and operational efficiency improvement. 
-                    We offer integrated technology solutions that support logistics and administrative processes.
+                        تؤمن MMC بأن التكنولوجيا هي العمود الفقري لتطوير الأعمال
+                        وتحسين الكفاءة التشغيلية. نحن نقدم حلولاً تقنية متكاملة
+                        تدعم العمليات اللوجستية والإدارية.
                     </p>
 
                     <p class="section-text">
-                        All our systems comply with the highest standards of cybersecurity and data protection, ensuring confidentiality and information integrity at all times.
+                        جميع الأنظمة لدينا متوافقة مع أعلى معايير الأمن السيبراني
+                        وحماية البيانات، مما يضمن السرية وسلامة المعلومات في جميع الأوقات.
                     </p>
                 </div>
 
@@ -348,32 +409,32 @@
                         <div class="col-md-6">
                             <div class="tech-card">
                                 <i class="fa fa-cogs"></i>
-                                <h5>Integrated Systems</h5>
-                                <p>Advanced platforms that support logistical and administrative operations.</p>
+                                <h5>الأنظمة المتكاملة</h5>
+                                <p>منصات متقدمة تدعم العمليات اللوجستية والإدارية.</p>
                             </div>
                         </div>
 
                         <div class="col-md-6">
                             <div class="tech-card">
                                 <i class="fa fa-shield-alt"></i>
-                                <h5>Security compliance</h5>
-                                <p>Strict protection of data and information.</p>
+                                <h5>الامتثال الأمني</h5>
+                                <p>حماية صارمة للبيانات والمعلومات.</p>
                             </div>
                         </div>
 
                         <div class="col-md-6">
                             <div class="tech-card">
                                 <i class="fa fa-database"></i>
-                                <h5>Operational efficiency</h5>
-                                <p>Improving workflow for faster and more accurate execution.</p>
+                                <h5>الكفاءة التشغيلية</h5>
+                                <p>تحسين سير العمل لسرعة ودقة التنفيذ.</p>
                             </div>
                         </div>
 
                         <div class="col-md-6">
                             <div class="tech-card">
                                 <i class="fa fa-chart-line"></i>
-                                <h5>Data confidentiality</h5>
-                                <p>Secure management of sensitive information at all stages.</p>
+                                <h5>سرية البيانات</h5>
+                                <p>إدارة آمنة للمعلومات الحساسة في جميع المراحل.</p>
                             </div>
                         </div>
 
@@ -383,63 +444,104 @@
             </div>
         </div>
     </section>
-    <!-- Technical Solutions Start-->
-    
-    <!-- Service Start -->
-    <div class="container-xxl py-5">
-        <div class="container py-5">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="text-secondary text-uppercase">Our Services</h6>
-                <h1 class="mb-5">Integrated solutions that meet your business needs</h1>
+    <!-- الحلول التقنية-->
+
+    <!-- Services Cards Start -->
+    <section class="py-5">
+        <div class="container">
+
+            <!-- Section Title -->
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">خدماتنا</h2>
+                <p class="text-muted">حلول متكاملة تلبي احتياجات أعمالك</p>
             </div>
+
             <div class="row g-4">
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item p-4">
+                <!-- Card 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card bg-white h-100 shadow rounded-4 overflow-hidden p-4">
                         <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="img/mailroom.png" alt="">
+                            <img src="img/mailroom.png" class="img-fluid w-100" alt="غرف البريد">
                         </div>
-                        <h4 class="mb-3">Total Mailroom Solution</h4>
-                        <p>End-to-end solutions for managing mailrooms with high efficiency and complete confidentiality.</p>
-                        <a class="btn-slide mt-2" href="service-mailroom.html"><i class="fa fa-arrow-right bg-primary"></i><span class="bg-primary">Read More</span></a>
+                        <div class="p-4">
+                            <h5 class="fw-bold mb-3">الحلول الشاملة لغرف البريد</h5>
+                            <p class="text-muted mb-4">
+                                حلول متكاملة لإدارة غرف البريد بكفاءة عالية وسرية تامة.
+                            </p>
+                            <a href="service-mailroomAR.html" class="read-more-btn text mb-3">
+                                <span class="text">قراءة المزيد</span>
+                                <span class="icon">
+                                    <i class="fa fa-arrow-left"></i>
+                                </span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="service-item p-4">
+                
+                <!-- Card 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card bg-white h-100 shadow rounded-4 overflow-hidden p-4">
                         <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="img/outsourse.png" alt="">
+                            <img src="img/outsourse.png" class="img-fluid w-100" alt="الإسناد الإداري">
                         </div>
-                        <h4 class="mb-3">Outsourcing Services</h4>
-                        <p>Qualified staff and flexible services to support business continuity.</p>
-                        <a class="btn-slide mt-2" href="service-outsourcing.html"><i class="fa fa-arrow-right bg-primary"></i><span class="bg-primary">Read More</span></a>
+                        <div class="p-4">
+                            <h5 class="fw-bold mb-3">الدعم والإسناد الإداري</h5>
+                            <p class="text-muted mb-4">
+                                كوادر مؤهلة وخدمات مرنة لدعم استمرارية الأعمال.
+                            </p>
+                            <a href="service-outsourcingAR.html" class="read-more-btn  mb-3">
+                                <span class="text">قراءة المزيد</span>
+                                <span class="icon">
+                                    <i class="fa fa-arrow-left"></i>
+                                </span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="service-item p-4">
+
+                <!-- Card 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card bg-white h-100 shadow rounded-4 overflow-hidden p-4">
                         <div class="overflow-hidden mb-4">
-                            <img class="img-fluid" src="img/archiving-2.png" alt="">
+                            <img src="img/archiving-2.png" class="img-fluid w-100" alt="الأرشفة الإلكترونية">
                         </div>
-                        <h4 class="mb-3">Electronic Archiving</h4>
-                        <p>Converting and archiving documents digitally according to the highest security standards.</p>
-                        <a class="btn-slide mt-2" href="service-archiving.html"><i class="fa fa-arrow-right bg-primary"></i><span class="bg-primary">Read More</span></a>
+                        <div class="p-4">
+                            <h5 class="fw-bold mb-3">الأرشفة الإلكترونية</h5>
+                            <p class="text-muted mb-4">
+                                تحويل وأرشفة المستندات رقمياً وفق أعلى معايير الأمان.
+                            </p>
+                            <a href="service-archivingAR.html" class="read-more-btn">
+                                <span class="text">قراءة المزيد </span>
+                                <span class="icon">
+                                    <i class="fa fa-arrow-left"></i>
+                                </span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <br>
-            <a href="services.html" class="btn btn-primary py-3 px-5">Explore All Services</a>
+
+            <!-- Explore Button -->
+            <div class="text-center mt-5">
+                <a href="servicesAR.html" class="btn btn-primary px-5 py-3 rounded-3">
+                    استعرض جميع الخدمات
+                </a>
+            </div>
+
         </div>
-    </div>
+    </section>
     <!-- Services Cards End -->
 
-	<!-- CTA Start -->
+    <!-- CTA Start -->
     <div class="container-fluid my-5">
         <div class="container">
             <div class="bg-primary rounded-4 p-5 text-center text-white wow fadeInUp">
                 <h2 class="fw-bold mb-3">
-					Ready to grow your logistics business?
+                    جاهز لتطوير أعمالك اللوجستية؟
                 </h2>
 
                 <p class="mb-4 fs-5">
-					Contact us today and let <strong>MMC</strong> team provide you with solutions tailored to your needs.
+                    تواصل معنا اليوم ودع فريق MMC يقدم لك حلولًا مصممة خصيصًا لاحتياجاتك
                 </p>
 
                 <a href="contactAR.html"
@@ -451,8 +553,8 @@
     </div>
     <!-- CTA End -->
 
-	<!-- Testimonial Start -->
-    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s" dir="rtl">
         <div class="container py-5">
             <div class="text-center">
                 <h6 class="text-secondary text-uppercase">عملائنا</h6>
@@ -617,17 +719,18 @@
         </div>
     </div>
     <!-- Testimonial End -->
-
+    
     <!-- Footer Start-->
-    <div class="container-fluid bg-dark text-light footer pt-5 wow fadeIn" data-wow-delay="0.1s" style="margin-top: 6rem;">
-        <div class="container py-5">
+    <footer class="site-footer" dir="rtl">
+        <div class="container">
             <div class="row gy-4">
 
                 <!-- العمود الأول: عن الشركة -->
                 <div class="col-lg-4 col-md-6">
-                    <h5 class="footer-title">MMC Logistic Services</h5>
+                    <h5 class="footer-title">MMC للخدمات اللوجستية</h5>
                     <p class="footer-text">
-                        We provide integrated solutions in logistics, mailrooms, electronic archiving, and administrative support within the Kingdom of Saudi Arabia.
+                        نقدم حلولًا متكاملة في الخدمات اللوجستية، غرف البريد،
+                        الأرشفة الإلكترونية، والدعم الإداري داخل المملكة العربية السعودية.
                     </p>
 
                     <div class="footer-social">
@@ -639,21 +742,21 @@
 
                 <!-- العمود الثاني: الخدمات -->
                 <div class="col-lg-2 col-md-6">
-                    <h5 class="footer-title"><strong>Services</strong></h5>
+                    <h5 class="footer-title"><strong>الخدمات</strong></h5>
                     <ul class="footer-links">
-                        <li><a href="service-mailroomAR.html">Mailroom Solutions</a></li>
-                        <li><a href="service-outsourcingAR.html">Administrative Outsourcing</a></li>
-                        <li><a href="service-archivingAR.html">Electronic Archiving</a></li>
-                        <li><a href="service-inventoryAR.html">Inventory of Assets</a></li>
+                        <li><a href="service-mailroomAR.html">حلول غرف البريد</a></li>
+                        <li><a href="service-outsourcingAR.html">الدعم والإسناد الإداري</a></li>
+                        <li><a href="service-archivingAR.html">الأرشفة الإلكترونية</a></li>
+                        <li><a href="service-inventoryAR.html">جرد الأصول</a></li>
 
                     </ul>
                 </div>
                 <div class="col-lg-2 col-md-6">
                     <h5> </h5>
                     <ul class="footer-links">
-                        <li><a href="service-parcelAR.html">Parcal Solutions</a></li>
-                        <li><a href="service-warehouseAR.html">Warehouse Solutions</a></li>
-                        <li><a href="service-specialAR.html">Special Services (VIP) </a></li>
+                        <li><a href="service-parcelAR.html">خدمات الطرود</a></li>
+                        <li><a href="service-warehouseAR.html">حلول المستودعات</a></li>
+                        <li><a href="service-specialAR.html">الخدمات الخاصة (VIP)</a></li>
                     </ul>
                 </div>
 
@@ -684,7 +787,7 @@
 
             <!-- الحقوق -->
             <div class="footer-bottom text-center">
-                © All rights reserved – Management and Marketing Company Limited
+                © جميع الحقوق محفوظة – شركة الإدارة والتسويق المحدودة
             </div>
         </div>
     </footer>
